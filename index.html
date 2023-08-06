@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <div class="painelControle">
+        <h1 id="btnParar" onclick="parar()" class="botao">Parar</h1>
+        <h1 id="btnAtencao" onclick="atencao()" class="botao">Atenção</h1>
+        <h1 id="btnSeguir" onclick="seguir()" class="botao">Seguir</h1>
+    </div>
+
+    <div class="semaforo">
+        <div id="luzParar" class="luz"></div>
+        <div id="luzAtencao" class="luz"></div>
+        <div id="luzSeguir" class="luz"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

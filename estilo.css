@@ -1,0 +1,61 @@
+:root {
+    --preto-claro: #31373d;
+    --luz-parar: #dd2e44;
+    --luz-atencao: #ffcc4d;
+    --luz-seguir: #77b255;
+}
+
+body {
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    margin: 0;
+    background: url("./assets/bg.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.botao {
+    background: #31373d;
+    color: #fff;
+    cursor: pointer;
+    padding: 25px;
+    text-align: center;
+    border-radius: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    transition: color linear .1s;
+}
+#btnParar:hover {
+    color: var(--luz-parar);
+}
+#btnAtencao:hover {
+    color: var(--luz-atencao);
+}
+#btnSeguir:hover {
+    color: var(--luz-seguir);
+}
+
+.semaforo {
+    background: #31373d;
+    width: 150px;
+    border-radius: 50px;
+    gap: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.luz {
+    width: 100px;
+    height: 100px;
+    background: black;
+    border-radius: 50%;
+    transition: background linear .3s;
+}
